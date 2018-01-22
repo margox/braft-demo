@@ -17,6 +17,8 @@ class Demo extends React.Component {
       placeholder: 'Hello World!',
       onHTMLChange: this.handleHTMLChange,
       viewWrapper: '.demo',
+      contentFormat: 'html',
+      initialContent: '',
       extendControls: [
         {
           type: 'split',
@@ -34,10 +36,10 @@ class Demo extends React.Component {
           component: <h1 style={{width: 200, color: '#ffffff', padding: 10, margin: 0}}>Hello World!</h1>
         }, {
           type: 'modal',
-          text: <span style={{paddingRight: 10,paddingLeft: 10}}>弹出菜单</span>,
+          text: <span style={{paddingRight: 10,paddingLeft: 10}}>弹窗</span>,
           className: 'modal-button',
           modal: {
-            title: '这是一个弹出框',
+            title: '这是一个弹窗',
             showClose: true,
             showCancel: true,
             showConfirm: true,
