@@ -1,6 +1,5 @@
 import './style.scss'
 import 'braft-editor/dist/braft.css'
-import 'antd/dist/antd.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import BraftEditor from 'braft-editor'

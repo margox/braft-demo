@@ -84,12 +84,13 @@ html,body{
   font-family: 'webfont', Helvetica, "microsoft yahei";
   line-height: 46px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
+  transition: .3s;
   &:hover{
-    background-color: $COLOR_ACTIVE - 40;
     color: #fff;
+    box-shadow: 0 5px 10px rgba($COLOR_ACTIVE, .2);
   }
 }
 
