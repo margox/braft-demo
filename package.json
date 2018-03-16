@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 5999",
+    "start": "webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 5999 --host 0.0.0.0",
     "build": "rm -rf dist/ && NODE_ENV=production webpack --config webpack.config.prod.js --progress --colors"
   },
   "devDependencies": {
@@ -26,7 +26,8 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "braft-editor": "^1.1.4",
+    "babel-polyfill": "^6.26.0",
+    "braft-editor": "^1.8.0",
     "react": "15.6.2",
     "react-dom": "15.6.2"
   }
