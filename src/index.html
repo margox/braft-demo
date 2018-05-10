@@ -4,95 +4,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Braft Editor</title>
-<link rel="stylesheet" href="https://margox.github.io/common/prism/prism.css?v4">
-<script src="https://margox.github.io/common/prism/prism.js?v2"></script>
 </head>
 <body>
 <header class="page-header">
   <h1 class="logo">Braft Editor</h1>
-  <h3 class="sub-title">开箱即用的React富文本编辑器</h3> 
-  <a class="more-docs" href="https://github.com/margox/braft-editor/blob/master/README.md">查看文档</a>
+  <h3 class="sub-title">A rich text editor for React, lightweight and beautiful.</h3> 
+  <a class="more-docs" href="https://github.com/margox/braft-editor/blob/master/README.md">Document</a>
 </header>
 <div class="container">
   <div class="editor-wrap" id="root"></div>
-  <div class="part">
-    <h5 class="part-caption">基本用法</h5>
-    <pre class="code">
-      <code class="language-jsx">
-import React from 'react'
-import BraftEditor from 'braft-editor'
-import 'braft-editor/dist/braft.css'
-
-class Demo extends React.Component {
-
-  state = {
-    htmlContent: ''
-  }
-
-  render() {
-
-    const editorProps = {
-      placeholder: 'Hello World!',
-      initialContent: '',
-      onHTMLChange: this.handleHTMLChange,
-      viewWrapper: '.demo',
-      // 增加自定义预览按钮
-      extendControls: [
-        {
-          type: 'split',
-        },
-        {
-          type: 'button',
-          text: '预览',
-          className: 'preview-button',
-          onClick: () => {
-            window.open().document.write(this.state.htmlContent)
-          }
-        }, {
-          type: 'dropdown',
-          text: &lt;span&gt;下拉菜单&lt;/span&gt;,
-          component: &lt;h1 style={{width: 200, color: '#ffffff', padding: 10, margin: 0}}&gt;Hello World!&lt;/h1&gt;
-        }, {
-          type: 'modal',
-          text: &lt;span style={{paddingRight: 10,paddingLeft: 10}}&gt;弹出菜单&lt;/span&gt;,
-          className: 'modal-button',
-          modal: {
-            title: '这是一个弹出框',
-            showClose: true,
-            showCancel: true,
-            showConfirm: true,
-            confirmable: true,
-            onConfirm: () => console.log(1),
-            onCancel: () => console.log(2),
-            onClose: () => console.log(3),
-            children: (
-              &lt;div style={{width: 480, height: 320, padding: 30}}&gt;
-                &lt;span&gt;Hello World！&lt;/span&gt;
-              &lt;/div&gt;
-            )
-          }
-        }
-      ]
-    }
-
-    return (
-      &lt;div className="demo"&gt;
-        &lt;BraftEditor {...editorProps} /&gt;
-      &lt;/div&gt;
-    )
-
-  }
-
-  handleHTMLChange = (htmlContent) => {
-    this.setState({ htmlContent })
-  }
-
-}</code>
-    </pre>
-  </div>
 </div>
 <footer class="page-footer">
-  <span class="copy-right">&copy; 2017 <a href="https://margox.cn">Margox</a></span>
+  <span class="copy-right">&copy; 2017-2018 <a href="https://margox.cn">Margox</a></span>
 </footer>
 <a href="https://github.com/margox/braft-editor"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
 </body>
