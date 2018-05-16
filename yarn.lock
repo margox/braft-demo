@@ -1095,9 +1095,9 @@ braces@^2.3.0, braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braft-editor@^1.8.9:
-  version "1.8.9"
-  resolved "https://registry.yarnpkg.com/braft-editor/-/braft-editor-1.8.9.tgz#c9289d5a1f0b82eeb2e29595905397bb09ba3ce6"
+braft-editor@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/braft-editor/-/braft-editor-1.9.0.tgz#c81ecc53a219197621ece424d47833fff4ce951d"
   dependencies:
     draft-convert "^2.0.0"
     draft-js "^0.10.3"
