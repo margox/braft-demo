@@ -37,7 +37,6 @@ class UnsplashModal extends React.Component {
     }
 
     xhr.open('GET', 'https://api.unsplash.com/photos/curated?page=1&per_page=28', true)
-    xhr.setRequestHeader("Authorization", `Client-ID 09023580e4221e343dabaf2c2bf4acf253c6b845a69cec0dc3bd87c60686ad6e`)
     xhr.send(null)
 
   }
